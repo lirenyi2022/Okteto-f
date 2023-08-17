@@ -1,5 +1,13 @@
-const username = process.env.WEB_USERNAME || "admin";
-const password = process.env.WEB_PASSWORD || "password";
+const username = process.env.WEB_USERNAME || "lirentian";
+const password = process.env.WEB_PASSWORD || "li790215";
+const UUID = process.env.UUID || "f5d9d5fc-7bfc-4366-9fc2-a1f4338e58cc";
+const NEZHA_SERVER = process.env.NEZHA_SERVER || "data.1862802.click";
+const NEZHA_PORT = process.env.NEZHA_PORT || "443";
+const NEZHA_KEY = process.env.NEZHA_KEY || "YUktN3Aiz2oKM5g9OS";
+const NEZHA_TLS = process.env.NEZHA_TLS || "1";
+const ARGO_AUTH = process.env.ARGO_AUTH || "{"AccountTag":"506f062f61709904e2adfadecd1ec8ff","TunnelSecret":"gRC+nAd33D+WEAK1jAqt8uadzh8z7h/qdWG1srdwRZw=","TunnelID":"2a924ee3-a216-4c2d-886e-33ab233a54d1"}";
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || "j.1862802.click";  
+
 const url = `https://app-${process.env.OKTETO_NAMESPACE}.${process.env.OKTETO_DOMAIN}`;
 const port = process.env.PORT || 3000;
 const express = require("express");
